@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>swiggy clone</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+   <div class="home">
+      <div class="home-acct">
+         <div class="homebutton"><img src="homeimg.png" alt="">
+            <pre> Home</pre>
+         </div>
+         <button id="My_Account-btn" onclick="openMyAccount()"><i class="fa fa-user-circle"
+               aria-hidden="true"></i></button>
+      </div>
+      <div id="saved-address-container">Address</Address>
+      </div>
+      <div id="recent_searches"></div>
+
+      <div id="searchbar">
+         <form>
+            <input type="text" id="searchhotel" onclick="goto1()" placeholder="    Search, Order, Enjoy, Repeat!">
+            <button id="searchbtn1"><i class="fa fa-search" aria-hidden="true"></i></button>
+         </form>
+      </div>
+      <div class="offerzonebase">
+         <div class="offerzone">
+            <img src="biryanioffer.avif" alt="">
+            <div class="offer-head">
+               <pre>Offers You
+Can't Refuse!</pre>
+            </div>
+            <div class="percent-off">
+               <div class="percent">65%</div>
+               <div class="percent-off-off">
+                  <pre> Off</pre>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="toppicks-head" id="toppicks-head">Trusted picks for you</div>
+      <div class="trusted-picks" id="trusted-picks"></div>
+
+      <div class="sort" id="sort" onclick="sortlist()" value="open">
+         Sort<i class="fa fa-sort" aria-hidden="true"></i>
+      </div>
+
+
+      <div class="explore-head">Restaurants to explore</div>
+      <div class="likedres-holder" id="likedres-holder"></div>
+
+      <div class="res1foods" id="res1foods"></div>
+      <div class="res2foods" id="res2foods"></div>
+      <div class="res3foods" id="res3foods"></div>
+      <div class="res4foods" id="res4foods"></div>
+      <div class="res5foods" id="res5foods"></div>
+
+
+
+      <div class="restaurantlist">
+         <UL id="01">
+            <li>
+               <div class="restaurantbar" id="res1" value="open">
+                  <div class="restimg"><img src="kfcimg.jpeg" alt=""></div>
+                  <div class="likeres" onclick="likedres()" onmousewheel="deldatat1()"><i class="fa fa-heart"
+                        id="likeres" aria-hidden="true"></i></div>
+                  <div class="resdetails" onclick="selected0()">
+                     <div class="resname">kfc</div>
+                     <div class="resratings" id="resratings"><i class="fa fa-star" aria-hidden="true"
+                           id="resratingstar"></i>4.6</div>
+                     <div class="noofratings">(1K+)</div>
+                     <div class="dot">.</div>
+                     <div class="restime">36 </div>
+                     <div class="min">min</div>
+                     <div class="resfoodname">Ice cream</div>
+                     <div class="rescity">Kurnool</div>
+                     <div class="resdist">35 km</div>
+                  </div>
+               </div>
+            </li>
+
+
+            <li>
+               <div class="restaurantbar" id="res2" value="open">
+                  <div class="restimg"><img src="biryani4img.jpg" alt=""></div>
+                  <div class="likeres" onclick="likedres1()" onmousewheel="deldatat2()"><i class="fa fa-heart"
+                        id="likeres1" aria-hidden="true"></i></div>
+                  <div class="resdetails" onclick="selected1()">
+                     <div class="resname">Hotel Hindustan</div>
+                     <div class="resratings" id="resratings"><i class="fa fa-star" aria-hidden="true"
+                           id="resratingstar"></i>4.0</div>
+                     <div class="noofratings">(1.8K+)</div>
+                     <div class="dot">.</div>
+                     <div class="restime">25 </div>
+                     <div class="min">min</div>
+                     <div class="resfoodname">Biryanis and more</div>
+                     <div class="rescity">Kurnool</div>
+                     <div class="resdist">45 km</div>
+                  </div>
+               </div>
+            </li>
+
+
+            <li>
+               <div class="restaurantbar" id="res3" value="open">
+                  <div class="restimg"><img src="dosaimg.jpeg" alt=""></div>
+                  <div class="likeres" onclick="likedres2()" onmousewheel="deldatat3()"><i class="fa fa-heart"
+                        id="likeres2" aria-hidden="true"></i></div>
+                  <div class="resdetails" onclick="selected2()">
+                     <div class="resname">Sri Balaji Canteen</div>
+                     <div class="resratings" id="resratings"><i class="fa fa-star" aria-hidden="true"
+                           id="resratingstar"></i>4.1</div>
+                     <div class="noofratings">(2K+)</div>
+                     <div class="dot">.</div>
+                     <div class="restime">25 </div>
+                     <div class="min">min</div>
+                     <div class="resfoodname">Dosa and more</div>
+                     <div class="rescity">Kurnool</div>
+                     <div class="resdist">30 km</div>
+                  </div>
+               </div>
+            </li>
+
+
+            <li>
+               <div class="restaurantbar" id="res4" value="open">
+                  <div class="restimg"><img src="icecreme.jpeg" alt=""></div>
+                  <div class="likeres" onclick="likedres3()" onmousewheel="deldatat4()"><i class="fa fa-heart"
+                        id="likeres3" aria-hidden="true"></i></div>
+                  <div class="resdetails" onclick="selected3()">
+                     <div class="resname">Ice Berg</div>
+                     <div class="resratings" id="resratings"><i class="fa fa-star" aria-hidden="true"
+                           id="resratingstar"></i>3.0</div>
+                     <div class="noofratings">(1.2K+)</div>
+                     <div class="dot">.</div>
+                     <div class="restime">20</div>
+                     <div class="min">min</div>
+                     <div class="resfoodname">Ice cream</div>
+                     <div class="rescity">Kurnool</div>
+                     <div class="resdist">25 km</div>
+                  </div>
+               </div>
+            </li>
+
+
+            <li>
+               <div class="restaurantbar" id="res5" value="open">
+                  <div class="restimg"><img src="vegfoods.jpeg" alt=""></div>
+                  <div class="likeres" onclick="likedres4()" onmousewheel="deldatat5()"><i class="fa fa-heart"
+                        id="likeres4" aria-hidden="true"></i></div>
+                  <div class="resdetails" onclick="selected4()">
+                     <div class="resname">Arunodaya</div>
+                     <div class="resratings" id="resratings"><i class="fa fa-star" aria-hidden="true"
+                           id="resratingstar"></i>4.2</div>
+                     <div class="noofratings">(2.2K+)</div>
+                     <div class="dot">.</div>
+                     <div class="restime">43 </div>
+                     <div class="min">min</div>
+                     <div class="resfoodname">Vegetarian foods</div>
+                     <div class="rescity">Kurnool</div>
+                     <div class="resdist">45 km</div>
+                  </div>
+               </div>
+            </li>
+
+         </UL>
+
+
+      </div>
+   </div>
+</body>
+<script src="/js/swiggy.js"></script>
+<script src="/js/addressselect.js"></script>
+
+</html>

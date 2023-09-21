@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/foodselect.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="display">
+        <div class="backbtn"><button id="backbtn" onclick="gotohome()"><i class="fa fa-long-arrow-left"
+                    aria-hidden="true"></i></button></div>
+        <!-- give restaurant name -->
+        <button id="addfood" onclick="addfood()" ><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+        <button id="delfood" onclick="delfoods()" ><i class="fa fa-times" aria-hidden="true"></i></i></button>
+        <div class="foods" id="foods"></div>
+
+        <div class="addfoodcont" id="addfoodcont">
+            <div class="foodname-head">Add Food Name</div>
+            <div class="foodname"><input type="text" name="" id="foodname"></div>
+            <div class="price-head">Add Price</div>
+            <div class="price"><input type="text" id="price"></div>
+            <button id="enterfp" onclick="givefoodname()">ENTER</button>
+        </div>
+
+        <div class="payment" id="payment">
+            
+        </div>
+  <div class="selectedfoodcont" id="selectedfoodcont"></div>
+    </div>
+
+
+</body>
+<script src="/js/foodselect.js"></script>
+
+</html>

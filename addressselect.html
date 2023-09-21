@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/css/addressselect.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  
+</head>
+
+<body>
+   <div id="opaqueback">
+      <div id="clearhist-confirm">Do you want to clear history
+         <button id="clearhist-confirm-ok" onclick="clearhistory()">OK</button>
+      </div>
+   </div>
+   <div class="display">
+      <div class="heading">
+         <div class="backbutton"><img src="back arrow.png" alt=""></div>
+         <pre>  Enter your area or apartment name</pre>
+      </div>
+
+      <div class="searchbar">
+         <button id="searchbutton1" onclick="recentsearch()"><i class="fas fa-search" aria-hidden="true"></i></button>
+         <form>
+            <input type="text" id="get-address" placeholder="Try Jagannathagattu , Kurnool, etc." onkeyup="savebtn()" >
+         </form>
+      </div>
+      <button id="save-button" onclick="addressvalue()" >Save</button>
+      <div class="currentlocation">
+         <i class="fa fa-location-arrow" aria-hidden="true"></i>
+         <pre>  Use my current location</pre>
+      </div>
+      <div class="savedaddress-heading">SAVED ADDRESS</div>
+      <div class="recent-address" >
+         <div class="container-address-save">
+            <div id="address-save"></div>
+            <button id="cancelbtn1" onclick="deldata()"><i class="fa fa-times" aria-hidden="true"></i> </button>
+         </div>
+      </div>
+      <div id="recentsearches-heading">RECENT SEARCHES</div>
+      <div id="recentsearches">
+
+      </div>
+
+
+      <button id="clearhistory" onclick="confirmdel()">clear history</button>
+   </div>
+
+
+</body>
+<script src="/js/addressselect.js"></script>
+<script src="/js/swiggy.js"></script>
+
+</html>

@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+body {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    width: 25vw;
+    height: 80vh;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px rgb(130, 124, 124);
+
+}
+
+.backbtn {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+#backbtn {
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+}
+#backbtn :hover{
+    cursor: pointer;
+}
+#backbtn i {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+
+
+
+.name-no-mail {
+    position: relative;
+    width: 25vw;
+    height: 6vh;
+    top: 1.5vh;
+}
+
+#name {
+    position: relative;
+    left: 0.3vw;
+    display: flex;
+    width: 21vw;
+    height: 2.5vh;
+    font-size: 1.5vw;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+#no {
+    padding-left: 5px;
+    width: 6vw;
+    height: 2vh;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 0.8vw;
+    color: #959090;
+    position: relative;
+    top: 0.25vh;
+    overflow: hidden;
+}
+
+#mail {
+    display: flex;
+    align-items: center;
+    color: #959090;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.8vw;
+    width: 19.2vw;
+    position: absolute;
+    top: 2.6vh;
+    left: 6.5vw;
+    height: 2vh;
+
+}
+
+.fullstop {
+
+    display: flex;
+    position: absolute;
+    top: 2.4vh;
+    left: 6vw;
+    width: 1vw;
+    height: 2vh;
+    align-items: center;
+    color: #959090;
+}
+
+#edit-acct {
+    position: absolute;
+    top: 0vh;
+    left: 22vw;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 115, 0);
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    width: 1vw;
+}
+
+#edit-acct:hover {
+    scale: 1.02;
+    cursor: pointer;
+}
+
+#hr1 {
+    position: relative;
+    width: 25vw;
+    border: 1px solid black;
+}
+
+#myaccounts {
+    position: relative;
+    width: 25vw;
+    height: auto;
+    /* border: 1px solid; */
+}
+
+#MyAccount-head {
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+    
+}
+
+.description {
+    position: relative;
+    top: 0vh;
+    left: 0.3vw;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 0.8vw;
+    height: 1.7vh;
+    padding-left: 4px;
+    border: none;
+    outline: none;
+    color: #959090;
+}
+
+#hr2 {
+    position: relative;
+    width: 24vw;
+    top: 1vh;
+    border: 1px solid #959090;
+}
+
+/* #options{
+    visibility: hidden;
+} */
+.optionhold1 {
+    display: none;
+}
+
+#dropdownbtn {
+    position: absolute;
+    top: 0.2vh;
+    left: 23vw;
+    border: none;
+    outline: none;
+    rotate: z 0deg;
+    background-color: whitesmoke;
+    width: 1vw;
+    color: #959090;
+}
+
+#dropdownbtn i {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#options {
+    position: relative;
+    top: 0.3vh;
+    width: 25vw;
+    height: auto;
+    border: none;
+}
+
+#fav {
+    display: flex;
+    align-items: center;
+    /* border-top: 0.5px  solid #959090 ;
+    border-bottom: 0.5px  solid #959090 ; */
+    height: 4vh;
+}
+
+#fav pre {
+    font-family: 'Kanit', sans-serif;
+    color: #959090;
+    font-size: 1vw;
+}
+
+#fav i {
+    padding-left: 7px;
+    font-size: 0.75vw;
+    color: #959090;
+}
+
+#fav button {
+    position: relative;
+    left: 17vw;
+    width: 1vw;
+}
+
+#hiddenrest {
+    display: flex;
+    align-items: center;
+    /* border-top: 0.5px  solid #959090 ;
+    border-bottom: 0.5px  solid #959090 ; */
+    height: 4vh;
+}
+
+#hiddenrest pre {
+    font-family: 'Kanit', sans-serif;
+    color: #959090;
+    font-size: 1vw;
+}
+
+#hiddenrest i {
+    padding-left: 7px;
+    font-size: 0.75vw;
+    color: #959090;
+}
+
+#hiddenrest button {
+    position: relative;
+    left: 13vw;
+    width: 1vw;
+}
+
+#settings {
+    display: flex;
+    align-items: center;
+    /* border-top: 0.5px  solid #959090 ; */
+    border-bottom: 0.5px solid #959090;
+    height: 4vh;
+}
+
+#settings pre {
+    font-family: 'Kanit', sans-serif;
+    color: #959090;
+    font-size: 1vw;
+}
+
+#settings i {
+    padding-left: 7px;
+    font-size: 0.75vw;
+    color: #959090;
+}
+
+#settings button {
+    position: relative;
+    left: 17.9vw;
+    width: 1vw;
+}
+
+.openwindow {
+    background-color: whitesmoke;
+    font-size: 0.85vw;
+    color: #959090;
+    border: none;
+    outline: none;
+}
+
+#addresses {
+    position: relative;
+    width: 25vw;
+    height: auto;
+    top: 0.5vh;
+    /* border: 1px solid; */
+}
+
+#Address-head {
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+   
+}
+
+#hr3 {
+    position: relative;
+    width: 24vw;
+    top: 1vh;
+    border: 1px solid #959090;
+}
+
+#gobtn1 {
+    position: absolute;
+    top: 0.2vh;
+    left: 23vw;
+    border: none;
+    outline: none;
+    rotate: z 0deg;
+    background-color: whitesmoke;
+    width: 1vw;
+}
+
+#gobtn1 i {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #959090;
+    padding-left: 3px;
+}
+
+#payments {
+    position: relative;
+    width: 25vw;
+    height: auto;
+    top: 0.5vh;
+}
+
+#Payment-head {
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+}
+
+#hr4 {
+    position: relative;
+    width: 24vw;
+    top: 1vh;
+    border: 1px solid #959090;
+}
+
+#dropdownbtn2 {
+    position: absolute;
+    top: 0.5vh;
+    left: 22.8vw;
+    border: none;
+    outline: none;
+    rotate: z 0deg;
+    background-color: whitesmoke;
+    width: 1vw;
+    color: #959090;
+}
+
+#dropdownbtn2 i {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #959090;
+    padding-left: 3px;
+}
+
+#options2 {
+    position: relative;
+    top: 0.3vh;
+    width: 25vw;
+    height: auto;
+    border: none;
+}
+
+.optionhold2 {
+    display: none;
+}
+
+#refund {
+    display: flex;
+    align-items: center;
+    /* border-top: 0.5px  solid #959090 ; */
+    /* border-bottom: 0.5px  solid #959090 ; */
+    height: 4vh;
+}
+
+#refund pre {
+    font-family: 'Kanit', sans-serif;
+    color: #959090;
+    font-size: 1vw;
+}
+
+#refund i {
+    padding-left: 7px;
+    font-size: 0.75vw;
+    color: #959090;
+}
+
+#refund button {
+    position: relative;
+    left: 15.3vw;
+    width: 1vw;
+}
+
+#PaymentModes {
+    display: flex;
+    align-items: center;
+    /* border-top: 0.5px  solid #959090 ; */
+    border-bottom: 0.5px solid #959090;
+    height: 4vh;
+}
+
+#PaymentModes pre {
+    font-family: 'Kanit', sans-serif;
+    color: #959090;
+    font-size: 1vw;
+}
+
+#PaymentModes i {
+    padding-left: 7px;
+    font-size: 0.75vw;
+    color: #959090;
+}
+
+#PaymentModes button {
+    position: relative;
+    left: 14.5vw;
+    width: 1vw;
+}
+
+#swiggymoney {
+    position: relative;
+    width: 25vw;
+    height: auto;
+    top: 0.5vh;
+    /* border: 1px solid; */
+}
+
+#Swiggymoney-head {
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+    
+}
+
+#hr5 {
+    position: relative;
+    width: 24vw;
+    top: 1vh;
+    border: 1px solid #959090;
+}
+
+#gobtn2 {
+    position: absolute;
+    top: 0.5vh;
+    left: 23vw;
+    border: none;
+    outline: none;
+    rotate: z 0deg;
+    background-color: whitesmoke;
+    width: 1vw;
+}
+
+#gobtn2 i {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #959090;
+    padding-left: 3px;
+}
+#referearn {
+    position: relative;
+    width: 25vw;
+    height: auto;
+    top: 0.5vh;
+    /* border: 1px solid; */
+}
+
+#Referearn-head {
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+   
+}
+.didyouknow{
+    position: relative;
+    top: 1vh;
+    width: 23vw;
+    height: 6vh;
+    border-radius: 7px;
+    box-shadow: 1px 0px 2px #959090;
+    left: 1vw;
+    font-size: 1vw;
+    font-family:'Kanit', sans-serif ;
+    color: #000000;
+    font-weight: 500;
+
+}
+.didyouknow i{
+    padding: 8px;
+    position: relative;
+    top: 1vh;
+}
+.didyouknow pre{
+    font-size: 0.7vw;
+    color: #959090;
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    top: -1.7vh;
+    left: 2vw;
+}
+#hr6 {
+    position: relative;
+    width: 24vw;
+    top: 1vh;
+    border: 1px solid #959090;
+}
+
+#gobtn3 {
+    position: absolute;
+    top: 0.5vh;
+    left: 23vw;
+    border: none;
+    outline: none;
+    rotate: z 0deg;
+    background-color: whitesmoke;
+    width: 1vw;
+}
+
+#gobtn3 i {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #959090;
+    padding-left: 3px;
+}
+
+#redeemcoupon {
+    position: relative;
+    width: 25vw;
+    height: auto;
+    top: 0.5vh;
+    /* border: 1px solid; */
+}
+
+#Redeemcoupon-head {
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+    
+}
+
+#hr7 {
+    position: relative;
+    width: 24vw;
+    top: 1vh;
+    border: 1px solid #959090;
+}
+
+#gobtn4 {
+    position: absolute;
+    top: 0.5vh;
+    left: 23vw;
+    border: none;
+    outline: none;
+    rotate: z 0deg;
+    background-color: whitesmoke;
+    width: 1vw;
+}
+
+#gobtn4 i {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #959090;
+    padding-left: 3px;
+}
+#help {
+    position: relative;
+    width: 25vw;
+    height: auto;
+    top: 0.5vh;
+    /* border: 1px solid; */
+}
+
+#Help-head {
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    color: #000000;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+  
+}
+
+#gobtn5 {
+    position: absolute;
+    top: 0.5vh;
+    left: 23vw;
+    border: none;
+    outline: none;
+    rotate: z 0deg;
+    background-color: whitesmoke;
+    width: 1vw;
+}
+
+#gobtn5 i {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #959090;
+    padding-left: 3px;
+}
+.pastorders{
+    display: flex;
+    position: relative;
+    height: 4vh;
+    top: 2vh;
+    font-size: 1vw;
+    background-color: #e5e5e5;
+    color: #959090;
+    align-items: center;
+    padding-left: 7px;
+    font-family: 'Kanit', sans-serif;
+}
+#pastordercontainer{
+    width: 25vw;
+    height: auto;
+    position: relative;
+    top: 3vh;
+    border: 1px solid;
+
+}
+#logout{
+    position: relative;
+    top: 3VW;
+    font-weight: 600;
+    background-color: white;
+    color: #000000;
+    font-family:'Kanit', sans-serif ;
+    font-size: 1VW;
+    padding-left: 7PX;
+}
+#logout:hover{
+    cursor: pointer;
+}

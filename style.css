@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    width: 25vw;
+    height: 80vh;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px rgb(130, 124, 124);
+    overflow: scroll;
+
+
+}
+
+.home::-webkit-scrollbar {
+    display: none;
+}
+
+.home-acct {
+    width: 100%;
+    height: 5vh;
+    /* border: solid 1px black; */
+    display: flex;
+}
+
+.homebutton {
+    width: 6vw;
+    height: 3vh;
+    border: solid 1px whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    border-radius: 3px;
+    position: relative;
+    top: 0.3vh;
+
+}
+
+.homebutton:hover {
+    scale: 1.05;
+    transition: scale 0.2s;
+    cursor: pointer;
+}
+
+.homebutton pre {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: black;
+
+}
+
+.homebutton img {
+    width: 30%;
+    height: 90%;
+}
+
+#saved-address-container {
+    width: 20vw;
+    height: 2.4vh;
+    position: relative;
+    top: -2.2vh;
+    left: 0.5vw;
+    color: #959090;
+    font-size: 0.9vw;
+    overflow: hidden;
+    font-family: 'Kanit', sans-serif;
+}
+
+#recent_searches {
+    position: absolute;
+    visibility: hidden;
+}
+
+#My_Account-btn {
+    position: relative;
+    top: 0vh;
+    left: 16.5vw;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+
+}
+
+#My_Account-btn:hover {
+    cursor: pointer;
+}
+
+#My_Account-btn i {
+    font-size: 2vw;
+}
+
+#My_Account-btn i:hover {
+    scale: 1.02;
+
+}
+
+#searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    position: relative;
+    top: -2vh;
+}
+
+#searchbar input {
+    width: 23vw;
+    height: 4vh;
+    position: relative;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+#searchbtn1 {
+    position: absolute;
+    left: 22.5vw;
+    border: none;
+    background-color: #e0e0e0;
+    font-size: 1.1vw;
+    color: #959090;
+    top: 0.8vw;
+    font-weight: 500;
+}
+
+#searchbtn1 i {
+    font-weight: 500;
+}
+
+.offerzonebase {
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+}
+
+.offerzone {
+    /* border: 1px solid; */
+    width: 23vw;
+    height: 18vh;
+    border-radius: 7px;
+    position: relative;
+
+}
+
+.offerzone img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.offer-head {
+    position: relative;
+    top: 0.5vh;
+    left: 1vw;
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.offer-head pre {
+    font-family: 'Kanit', sans-serif;
+}
+
+.percent-off {
+    color: #ffffff;
+    position: relative;
+    top: 0.5vh;
+    left: 1vw;
+    display: flex;
+    width: 6vw;
+}
+
+.percent {
+    font-size: 1.4vw;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+}
+
+.percent-off-off pre {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+
+.toppicks-head {
+    position: relative;
+    top: 2vh;
+    font-size: 1.5vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    padding-left: 7px;
+    visibility: hidden;
+}
+
+.trusted-picks {
+    position: relative;
+    top: 2vh;
+    width: 25vw;
+    height: auto;
+    display: flex;
+    padding: 0.5vw;
+    overflow-x: scroll;
+}
+
+.trusted-picks::-webkit-scrollbar {
+    display: none;
+}
+
+.trusted-pickhold {
+    width: 10vw;
+    height: auto;
+    display: flex;
+    font-size: 0.8vw;
+    justify-content: start;
+    padding: 0%;
+    flex-wrap: wrap;
+}
+
+.sort {
+    margin-left: 7px;
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    top: 1vh;
+    border: 1px solid;
+    border-radius: 8px;
+    width: 8vw;
+    min-height: 2vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.sort i {
+    position: absolute;
+    top: 0.7vh;
+    left: 4.95vw;
+    font-size: 0.8vw;
+}
+
+.sort-btn {
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+.explore-head {
+    position: relative;
+    top: 2vh;
+    font-size: 1.5vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+.restaurantlist {
+    position: relative;
+    width: 25vw;
+    height: auto;
+    top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.restaurantbar {
+    width: 24vw;
+    height: 13vh;
+    border-radius: 7px;
+    display: flex;
+    margin-top: 1vw;
+
+}
+
+.restimg {
+    position: relative;
+    border-radius: 7px;
+    left: 0vw;
+    width: 9vw;
+    height: 13vh;
+}
+
+.restimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.likeres {
+    position: relative;
+    top: 2vh;
+    left: -2vw;
+}
+
+.resdetails {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15vw;
+    height: 13vh;
+    border-radius: 7px;
+    left: 0.5vw;
+}
+
+.resname {
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: black;
+    width: 14vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+}
+
+.resratings {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+.noofratings {
+    position: absolute;
+    top: 4.7vh;
+    left: 2.5vw;
+    font-size: 0.7vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+.resratings {
+    font-size: 0.8vw;
+    color: green;
+}
+
+.dot {
+    position: absolute;
+    top: 1.8vh;
+    left: 4.6vw;
+    font-size: 2vw;
+    color: #959090;
+    font-family: 'Kanit', sans-serif;
+}
+
+.restime {
+    position: absolute;
+    top: 4.15vh;
+    left: 5vw;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.min {
+    position: absolute;
+    top: 4.15vh;
+    left: 6.3vw;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+.resfoodname {
+    width: 14vw;
+    height: 2vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: black;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.rescity {
+    width: 14vw;
+    height: 2vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: black;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.resdist {
+    position: absolute;
+    top: 8.25vh;
+    left: 5vw;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+.likedres-holder {
+    position: absolute;
+    left: 1vw;
+    border: 1px solid;
+    width: 25vw;
+    height: auto;
+    display: none;
+}
+
+.likedres-bar {
+    width: 24vw;
+    height: 13vh;
+    border-radius: 7px;
+    display: flex;
+    margin-top: 1vw;
+}
+
+.del1 {
+    position: relative;
+    top: -13vh;
+    left: 22vw;
+    border: none;
+    background-color: white;
+}
+
+.res1foods {
+    width: 25vw;
+    height: auto;
+    border: 1px solid;
+    position: absolute;
+    top: 22.5vh;
+    left: 1vw;
+    display: none;
+}
+
+.res2foods {
+    width: 25vw;
+    height: auto;
+    border: 1px solid;
+    position: absolute;
+    top: 22.5vh;
+    left: 1vw;
+    display: none;
+}
+
+.res3foods {
+    width: 25vw;
+    height: auto;
+    border: 1px solid;
+    position: absolute;
+    top: 22.5vh;
+    left: 1vw;
+    display: none;
+}
+
+.res4foods {
+    width: 25vw;
+    height: auto;
+    border: 1px solid;
+    position: absolute;
+    top: 22.5vh;
+    left: 1vw;
+    display: none;
+}
+
+.res5foods {
+    width: 25vw;
+    height: auto;
+    border: 1px solid;
+    position: absolute;
+    top: 22.5vh;
+    left: 1vw;
+    display: none;
+}

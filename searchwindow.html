@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/searchwindow.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <div class="display">
+        <div class="backbtn"><button id="backbtn" onclick="gotohome()"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button></div>
+        <section class="heading">Search for dishes & restaurants </section>
+        <div id="searchbar">
+            <input type="text" id="search" placeholder="   " onkeyup="search1()" >
+            <button id="searchbtn" class="searchbtn" onclick="searchit()"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button id="cancel" class="cancelcross" onclick="clear()"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+        <div class="recentsearch-head">Recent Searches in <b>Food</b></div>
+       <div id="recentsearch">
+       <ul id="historylist"></ul>
+       </div>
+       <div class="popdish"><div class="popcuisines"><b>Popular Cuisines</b></div><div class="dishcont">
+        
+        <div class="slider">
+        <div class="dishcell"><div class="image"><img src="biryani4img.jpg" alt=""></div><div class="dishname">Biryani</div></div>
+        <div class="dishcell"><div class="image"><img src="pizza img.jpg" alt=""></div><div class="dishname">Pizza</div></div>
+        <div class="dishcell"><div class="image"><img src="rollsimg.jpg" alt=""></div><div class="dishname">Rolls</div></div>
+        <div class="dishcell"><div class="image"><img src="teaimg.jpg" alt=""></div><div class="dishname">Tea</div></div>
+        <div class="dishcell"><div class="image"><img src="burgerimg.jpg" alt=""></div><div class="dishname">Burger</div></div>
+        <div class="dishcell"><div class="image"><img src="chinesefoodimg.jpg" alt=""></div><div class="dishname">Chinese</div></div>
+        <div class="dishcell"><div class="image"><img src="cakesimg.jpg" alt=""></div><div class="dishname">Cake</div></div>
+        <div class="dishcell"><div class="image"><img src="dessertsimg.jpg" alt=""></div><div class="dishname">Dessert</div></div>
+        <div class="dishcell"><div class="image"><img src="northfoodsimg.jpg" alt=""></div><div class="dishname">North Indian</div></div>
+        <div class="dishcell"><div class="image"><img src="southindianfoodsimg.jpg" alt=""></div><div class="dishname">South Indian</div></div>
+        <div class="dishcell"><div class="image"><img src="sandwichimg.jpg" alt=""></div><div class="dishname">Sandwich</div></div>
+        <div class="dishcell"><div class="image"><img src="icecreamsimg.jpg" alt=""></div><div class="dishname">Ice Cream</div></div>
+    </div></div></div>
+
+    </div>
+   
+</body>
+<script src="/js/searchwindow.js"></script>
+</html>

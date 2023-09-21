@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+body{
+    padding-top:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.display{
+    width: 25vw;
+    height: 80vh;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius:3px; 
+    box-shadow: 5px 5px 10px rgb(130, 124, 124);
+    overflow-y: scroll;
+
+}
+.display::-webkit-scrollbar{display: none;}
+.backbtn{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.favres-head{
+    position: relative;
+    top: 2.6vh;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    padding-left: 34px;
+}
+#backbtn{
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+}
+#backbtn:hover{
+    cursor: pointer;
+}
+
+#backbtn i{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.favrest-name{
+    position: relative;
+    top: 1.5vh;
+    width: 25vw;
+    height: auto;
+  
+}
+.restname-display{
+    width: 24vw;
+   height: 13vh;
+}
+
+.restaurantbar{
+    width: 24vw;
+    height: 13vh;
+    border-radius: 7px;
+    display: flex;
+    margin-top: 1vw;
+
+}
+.restimg{
+   position: relative; 
+   border-radius: 7px;
+   left: 0vw;
+   width: 9vw;
+   height: 13vh;
+}
+.restimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.likeres{
+    position: relative;
+    top: 2vh;
+    left: -2vw;
+}
+.resdetails{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15vw;
+    height: 13vh;
+    border-radius: 7px;
+    left: 0.5vw;
+}
+.resname{
+    position: relative;
+    font-family: 'Kanit', sans-serif ;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: black;
+    width: 14vw;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+}
+.resratings{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1vw;
+    font-family:'Kanit', sans-serif ;
+    font-weight: 300;
+}
+.noofratings{
+    position: absolute;
+    top: 4.7vh;
+    left: 2.5vw;
+    font-size: 0.7vw;
+    font-family: 'Kanit', sans-serif;
+}
+.resratings{
+    font-size: 0.8vw;
+    color:green;
+}
+.dot{
+    position: absolute;
+    top: 1.8vh;
+    left: 4.6vw;
+    font-size: 2vw;
+    color: #959090;
+    font-family: 'Kanit', sans-serif;
+}
+.restime{
+    position: absolute;
+    top: 4.15vh;
+    left: 5vw;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+
+}
+.resfoodname{
+    width: 14vw;
+    height: 2vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: black;
+    font-size: 1vw;
+    font-family:'Kanit', sans-serif ;
+    font-weight: 300;
+    overflow: hidden;
+}
+.rescity{
+    width: 14vw;
+    height: 2vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: black;
+    font-size: 1vw;
+    font-family:'Kanit', sans-serif ;
+    font-weight: 300;
+    overflow: hidden;
+}
+.resdist{
+    position: absolute;
+    top: 8.25vh;
+    left: 5vw;
+    font-size: 1vw;
+    font-family: 'Kanit', sans-serif;
+}
+.likedres-bar{
+    width: 24vw;
+    height: 13vh;
+    border-radius: 7px;
+    display: flex;
+
+}
+.del1{
+    position: relative;
+    top: -13vh;
+    left: 22vw;
+    border: none;
+    background-color: white;
+}

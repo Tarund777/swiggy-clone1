@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+body{
+    padding-top:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#display{
+    width: 25vw;
+    height: 80vh;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius:3px; 
+    box-shadow: 5px 5px 10px rgb(130, 124, 124);
+
+}
+.backbtn{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+#backbtn{
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+   
+}
+#backbtn:hover{
+    cursor: pointer;
+   
+}
+#backbtn i{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.heading{
+    position: relative;
+    top: -3vh;
+    left: 3vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    color: black;
+    width: 14vw;
+}
+#names{
+    width: 25vw;
+    height: auto;
+}
+#yourname{
+    position: relative;
+    width: 25vw;
+    height: 6vh;
+    /* border: 1px solid; */
+}
+.name-head{
+    position: relative;
+    top: 1vh;
+    left: 0.5vw;
+    color: #959090;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.8vw;
+}
+ #name{
+    position: absolute;
+    top: 3.5vh;
+    left: 0.5vw;
+    font-family:  'Kanit', sans-serif;
+    color: black;
+    font-size: 1vw;
+    height: 1.7vh;
+    padding-left: 4px;
+    border: none;
+    outline: none;
+    color: #959090;
+    visibility: hidden;
+    width: 20vw;
+    background-color: whitesmoke;
+    caret-color: rgb(255, 115, 0);
+    
+}
+
+#namecontainer{
+    position: relative;
+    top: 1vh;
+    left: 0.5vw;
+    font-family:  'Kanit', sans-serif;
+    color: black;
+    font-size: 1vw;
+    height: 1.7vh;
+    padding-left: 4px;
+    border: none;
+    outline: none;
+    color: #959090;
+}
+#edit{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 115, 0);
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.7vw;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    position: relative;
+    top: -0.7vh;
+    left: 22vw;
+}
+#edit:hover{
+    scale:1.02;
+    cursor: pointer;
+}
+#btncontainer{
+    width: 25vw;
+    top: 0vh;
+    position: relative;
+    border:none;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#update{
+    position: relative;
+    width: 10vw;
+    height: 4vh;
+    color: white;
+    background-color: rgb(255, 115, 0);
+    border-radius: 6px;
+    border: none;
+    font-family:'Kanit', sans-serif ;
+    font-size: 0.85vw;
+    font-weight: bold;
+}
+#cancel{
+    position: relative;
+    width: 10vw;
+    height: 4vh;
+    color:  rgb(255, 115, 0);
+    background-color:whitesmoke;
+    border-radius: 6px;
+    border: 0.5px solid rgb(255, 115, 0); 
+    font-family:'Kanit', sans-serif ;
+    font-size: 0.85vw;
+    font-weight: bold;
+}
+#numbers{
+    width: 25vw;
+    height: auto;
+    position: relative;
+    top: 1vh;
+}
+#yourmobile{
+    position: relative;
+    width: 25vw;
+    height: 6vh;
+    /* border: 1px solid; */
+    /* top: 0vh; */
+}
+.mobile-head{
+    position: relative;
+    top: 1vh;
+    left: 0.5vw;
+    color: #959090;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.8vw;
+}
+#mobilecontainer{
+    position: relative;
+    top: 1vh;
+    left: 0.5vw;
+    font-family:  'Kanit', sans-serif;
+    color: black;
+    font-size: 1vw;
+    height: 1.7vh;
+    padding-left: 4px;
+    border: none;
+    outline: none;
+    color: #959090;
+}
+#mobile{
+    position: absolute;
+    top: 3.5vh;
+    left: 0.5vw;
+    font-family:  'Kanit', sans-serif;
+    color: black;
+    font-size: 1vw;
+    height: 1.7vh;
+    padding-left: 4px;
+    border: none;
+    outline: none;
+    color: #959090;
+    visibility: hidden;
+    width: 20vw;
+    background-color: whitesmoke;
+    caret-color: rgb(255, 115, 0);
+}
+#editmobile{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 115, 0);
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.7vw;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    position: relative;
+    top: -0.7vh;
+    left: 22vw;
+}
+#editmobile:hover{
+    cursor: pointer;
+}
+#mails{
+    width: 25vw;
+    height: auto;
+    position: relative;
+    top: 1vh;
+}
+#yourmail{
+    position: relative;
+    width: 25vw;
+    height: 6vh;
+    /* border: 1px solid; */
+}
+.mail-head{
+    position: relative;
+    top: 1vh;
+    left: 0.5vw;
+    color: #959090;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.8vw;
+}
+#mailcontainer{
+    position: relative;
+    top: 1vh;
+    left: 0.5vw;
+    font-family:  'Kanit', sans-serif;
+    color: black;
+    font-size: 1vw;
+    height: 1.7vh;
+    padding-left: 4px;
+    border: none;
+    outline: none;
+    color: #959090;
+}
+#mail{
+    position: absolute;
+    top: 3.5vh;
+    left: 0.5vw;
+    font-family:  'Kanit', sans-serif;
+    color: black;
+    font-size: 1vw;
+    height: 1.7vh;
+    padding-left: 4px;
+    border: none;
+    outline: none;
+    color: #959090;
+    visibility: hidden;
+    width: 20vw;
+    background-color: whitesmoke;
+    caret-color: rgb(255, 115, 0);
+}
+#editmail{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 115, 0);
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.7vw;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    position: relative;
+    top: -0.7vh;
+    left: 22vw;
+}
+#editmail:hover{
+    cursor: pointer;
+}
+#hr1{
+    width: 25vw;
+    position: absolute;
+    top: 5vh;
+    color: #959090;
+    left: -0.1vw;
+    border: 1px solid #959090;
+}
+#hr2{
+    width: 25vw;
+    position: absolute;
+    top: 5vh;
+    color: #959090;
+    left: -0.1vw;
+    border: 1px solid #959090;
+}
+#hr3{
+    width: 25vw;
+    position: absolute;
+    top: 5vh;
+    color: #959090;
+    left: -0.1vw;
+    border: 1px solid #959090;
+}

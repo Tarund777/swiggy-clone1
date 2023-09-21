@@ -1,0 +1,34 @@
+body{
+    padding-top:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.display{
+    width: 25vw;
+    height: 80vh;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius:3px; 
+    box-shadow: 5px 5px 10px rgb(130, 124, 124);
+
+}
+.backbtn{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+#backbtn{
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+}
+#backbtn:hover{
+    cursor: pointer;
+}
+#backbtn i{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
